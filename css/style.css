@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    margin: 0;
+    /* margin: 0; */
     background-color: var(--background-text-color);
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
@@ -42,6 +42,14 @@ body {
 
 .page-header {
     background-color: var(--secondary-text-color);
+}
+
+/* Container */
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    outline: 2px solid tomato;
 }
 
 /* Logo */
