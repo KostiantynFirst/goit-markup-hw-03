@@ -16,7 +16,18 @@
     --background-third-color: #2F303A;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
+    margin: 0;
     background-color: var(--background-text-color);
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
