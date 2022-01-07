@@ -14,6 +14,7 @@
     --background-text-color: #E5E5E5;
     --background-secondary-color: #F5F4FA; 
     --background-third-color: #2F303A;
+    --border-color: #EEEEEE;
 }
 
 html {
@@ -41,12 +42,17 @@ body {
     letter-spacing: 0.03em;
 }
 
+.hidden-title {
+    display: none;
+}
+
 .list {
     list-style: none;
 }
 
 .page-header {
     background-color: var(--secondary-text-color);
+    border: 1px solid #ECECEC;
 }
 
 /* Container */
@@ -165,6 +171,7 @@ body {
 }
 
 .hero {
+    padding-top: 200px;
     text-align: center;
 }
 
@@ -177,6 +184,10 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.hero > .button {
+    margin-bottom: 210px;
 }
 
 
@@ -248,6 +259,9 @@ body {
 
 .persons > .item {
     width: 270px;
+    background-color: var(--background-secondary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .persons > .item:not(:last-child) {
@@ -353,6 +367,7 @@ body {
 
 .portfolio-list-item {
     width: calc((100% - 60px) / 3);
+    border-bottom: 1px solid #EEEEEE; 
 }
 
 .portfolio-list-item:not(:nth-child(3n)) {
@@ -369,7 +384,10 @@ body {
 
 .portfolio-item img {
     display: block;
-    margin-bottom: 16px;
+}
+
+.potrfolio-container {
+    padding: 24px 20px;
 }
 
 .portfolio-title {
