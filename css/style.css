@@ -223,7 +223,7 @@ body {
 }
 
 .features > .item {
-    width: 370px;
+    flex-basis: ((100% - 90px) / 4);
 }
 
 .features > .item:not(:last-child) {
@@ -376,7 +376,7 @@ body {
 }
 
 .portfolio-list-item {
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
     border-bottom: 1px solid #EEEEEE; 
 }
 
